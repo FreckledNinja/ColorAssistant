@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/redTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red: "
+        android:layout_below="@id/mImageView"/>
+    <TextView
+        android:id="@+id/greenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green: "
+        android:layout_below="@id/redTextView"/>
+    <TextView
+        android:id="@+id/blueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue: "
+        android:layout_below="@id/greenTextView"/>
+    <TextView
+        android:id="@+id/colorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dominant Color: "
+        android:layout_below="@id/blueTextView"/>
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/colorTextView"
+        android:background="#000000"
+        />
+    <TextView
+        android:id="@+id/closestColorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closest Named Color: "
+        android:layout_below="@id/colorView"
+        android:layout_marginTop="16px"/>
+
+    <TextView
+        android:id="@+id/closestColorHexText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HEX: #"
+        android:layout_below="@id/closestColorTextView"/>
+
+    <View
+        android:id="@+id/closestColorView"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_below="@id/closestColorHexText"
+        android:background="#000000"
+        />
+
+
+
+</RelativeLayout>
